@@ -54,6 +54,14 @@
       </div>
     {% endif %}
 
+    <div class="w-layout__table-of-contents">
+      <h2 id="table-of-contents">
+        Table of Contents
+        <a class="w-headline-link" href="#table-of-contents" aria-hidden="true">#</a>
+      </h2>
+      {{ content | toc | safe }}
+    </div>
+
     {{ content | safe }}
 
     {# Hide tags for now. #} {#

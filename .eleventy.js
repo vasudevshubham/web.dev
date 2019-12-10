@@ -16,6 +16,7 @@
 
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const pluginTOC = require('eleventy-plugin-toc')
 
 const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
@@ -73,6 +74,8 @@ module.exports = function(config) {
   config.addPlugin(pluginSyntaxHighlight);
   // RSS feeds
   config.addPlugin(pluginRss);
+  // Table of Contents
+  config.addPlugin(pluginTOC);
 
   //----------------------------------------------------------------------------
   // MARKDOWN
