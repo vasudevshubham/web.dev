@@ -9,20 +9,19 @@ description:
   The Notification Triggers API allows developers to schedule local notifications that don't require
   a network connection, which makes them ideal for use cases like calendar apps.
 date: 2019-10-24
-updated: 2020-03-12
+updated: 2020-04-10
 hero: hero.jpg
 hero_position: center
 tags:
   - post
   - capabilities
   - fugu
-  - origin-trial
   - notification-triggers
 ---
 
 {% Aside %}
   The Notification Triggers API, part of Google's
-  [capabilities project](https://developers.google.com/web/updates/capabilities),
+  [capabilities project](/fugu-status),
   is currently in development. This post will be updated as the
   implementation progresses.
 {% endAside %}
@@ -70,25 +69,11 @@ alarms for telephone conferences or video calls.
 | ---------------------------------------- | ------------------------ |
 | 1. Create explainer                      | [Complete][explainer]    |
 | 2. Create initial draft of specification | Not started              |
-| 3. Gather feedback and iterate on design | [In progress](#feedback) |
-| **4. Origin trial**                      | **[In Progress][ot]**    |
-| 5. Launch                                | Not started              |
+| 3. Gather feedback and iterate on design | Complete                 |
+| 4. Origin trial                          | Complete                 |
+| 5. Launch                                | Complete                 |
 
 ## How to use notification triggers {: #use }
-
-### Enabling via chrome://flags
-
-To experiment with the Notification Triggers API locally, without an origin trial token, enable the
-`#enable-experimental-web-platform-features` flag in `chrome://flags`.
-
-### Enabling support during the origin trial phase
-
-Starting in Chrome 80, the Notification Triggers API will be available as an origin trial.
-
-{% include 'content/origin-trials.njk' %}
-
-Once you're registered,
-{% include 'content/origin-trial-register.njk' %}
 
 ### Feature detection
 

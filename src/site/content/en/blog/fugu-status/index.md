@@ -2,7 +2,7 @@
 title: New capabilities status
 subhead: Web apps should be able to do anything native apps can. Google wants to make it possible for you to build and deliver apps on the open web that have never been possible before.
 date: 2018-11-12
-updated: 2020-03-13
+updated: 2020-04-10
 tags:
   - post
   - capabilities
@@ -102,20 +102,6 @@ trials in the [Origin Trials Guide for Web Developers][ot-guide].
           allows web apps to read or save changes directly to files and folders
           on the user's device.<br>
           <em>Updated November 26, 2019</em>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="/notification-triggers/">
-            Notification Triggers
-          </a>
-        </td>
-        <td>
-          Notification Triggers let you schedule notifications in advance, so
-          that the operating system will deliver the notification at the right
-          time - even if there is no network connectivity, or the device is in
-          battery saver mode.<br>
-          <em>Updated December 12, 2019</em>
         </td>
       </tr>
       <tr>
@@ -245,6 +231,20 @@ latest version of Chrome, and in many cases other Chromium based browsers.
           that allows your web app to check to see if your native app is
           installed on the users device, and vice versa.<br>
           <em>Updated December 18, 2019</em>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/notification-triggers/">
+            Notification Triggers
+          </a>
+        </td>
+        <td>
+          Notification Triggers let you schedule notifications in advance, so
+          that the operating system will deliver the notification at the right
+          time - even if there is no network connectivity, or the device is in
+          battery saver mode.<br>
+          <em>Updated April 10, 2020</em>
         </td>
       </tr>
       <tr>
