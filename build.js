@@ -25,6 +25,7 @@ const rollupPluginCJS = require('rollup-plugin-commonjs');
 const rollupPluginPostCSS = require('rollup-plugin-postcss');
 const rollupPluginVirtual = require('rollup-plugin-virtual');
 const rollupPluginReplace = require('rollup-plugin-replace');
+const rollupPluginIstanbul = require('rollup-plugin-istanbul');
 const rollup = require('rollup');
 const terser = isProd ? require('terser') : null;
 const {getManifest} = require('workbox-build');
@@ -222,7 +223,13 @@ async function build() {
 async function buildTest() {
   const testBundle = await rollup.rollup({
     input: 'src/lib/test/index.js',
-    plugins: [rollupPluginPostCSS(), ...defaultPlugins],
+    plugins: [
+      rollupPluginPostCSS(),
+      rollupPluginIstanbul({
+        exclude: ['node_modules/**/*', '**/*-test.js', '**/test/**/*.js'],
+      }),
+      ...defaultPlugins,
+    ],
   });
   await testBundle.write({
     dir: 'dist/test',

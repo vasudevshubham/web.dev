@@ -26,8 +26,7 @@ module.exports = function(config) {
     browsers: ['ChromeHeadless'],
     files: ['dist/test/index.js'],
     frameworks: ['mocha'], // use the mocha test frameworkl
-    plugins: ['karma-chrome-launcher', 'karma-mocha', 'karma-sourcemap-loader'],
-    reporters: ['dots'], // report results in these formats.
+    reporters: ['dots', 'coverage'], // report results in these formats.
     singleRun: true, // set this to false to leave the browser open.
 
     client: {
